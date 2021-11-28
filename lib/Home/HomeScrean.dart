@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:movie/MyTheme/MyThemeData.dart';
 import 'package:movie/Ui/Browse/Browse_Tap.dart';
 import 'package:movie/Ui/Home_Tap/Home_Tap.dart';
@@ -28,16 +29,16 @@ class _HomeScreanState extends State<HomeScrean> {
         items: [
           BottomNavigationBarItem(
               icon: ImageIcon(AssetImage('assets/images/home_icon.png')),
-              label: 'Home'),
+              label: AppLocalizations.of(context)!.home),
           BottomNavigationBarItem(
               icon: ImageIcon(AssetImage('assets/images/search_icon.png')),
-              label: 'Search'),
+              label: AppLocalizations.of(context)!.search),
           BottomNavigationBarItem(
               icon: ImageIcon(AssetImage('assets/images/browse_icon.png')),
-              label: 'Browse'),
+              label: AppLocalizations.of(context)!.browse),
           BottomNavigationBarItem(
               icon: ImageIcon(AssetImage('assets/images/watchlist_icon.png')),
-              label: 'WatchList')
+              label: AppLocalizations.of(context)!.watchlist)
         ],
       ),
       body: Container(
